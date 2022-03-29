@@ -32,10 +32,153 @@
 </head>
 
 <body>
-    <h1>Texto Prueba</h1>
 
+    <!-- Barra de navegacion-->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark  ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/viajes.svg" alt="Logo Viejes Chile" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Viaje Chile
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Destacados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Carousel-->
+    <header class="container-fluid px-0">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <!-- Ocultar indicadores inferiores ------
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </header>
 
+    <!-- Quienes Somos -->
+    <article class="container">
+        <div class="row">
+            <section class="col">
+                <p><i class="fa-solid fa-plane"></i></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo cumque ex obcaecati optio ratione
+                    quibusdam dolorem voluptas repudiandae itaque aliquam dolorum illum nulla reiciendis harum atque,
+                    incidunt quos distinctio.</p>
+            </section>
+            <section class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo cumque ex obcaecati optio ratione
+                    quibusdam dolorem voluptas repudiandae itaque aliquam dolorum illum nulla reiciendis harum atque,
+                    incidunt quos distinctio.</p>
+                <i class="fa-solid fa-mountain"></i>
+            </section>
+            <section class="col">
+                <i class="fa-solid fa-route"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo cumque ex obcaecati optio ratione
+                    quibusdam dolorem voluptas repudiandae itaque aliquam dolorum illum nulla reiciendis harum atque,
+                    incidunt quos distinctio.</p>
+            </section>
+        </div>
+    </article>
+
+    <!-- Destacados-->
+
+    <article class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Contacto -->
+    <section>
+        
+    </section>
+
+    <!-- Footer con iconos-->
+    <footer class="container-fluid bg-azul">
+        <div class="row text-center bg-azul">
+            <div class="col-6">
+                <p>VIAJES CHILE</p>
+            </div>
+            <div class="col-6">
+                <i class="fa-brands fa-github-square"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter-square"></i>
+                <i class="fa-brands fa-facebook-square"></i>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap 5 js CDN-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
