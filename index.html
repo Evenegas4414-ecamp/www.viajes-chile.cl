@@ -48,16 +48,16 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quienes Somos</a>
+                        <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destacados</a>
+                        <a class="nav-link" href="#destacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -65,7 +65,7 @@
     </nav>
 
     <!-- Carousel-->
-    <header class="container-fluid px-0">
+    <header id="inicio"class="container-fluid px-0">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <!-- Ocultar indicadores inferiores ------
         <div class="carousel-indicators">
@@ -98,8 +98,8 @@
     </header>
 
     <!-- Quienes Somos -->
-    <article class="container">
-        <h2 class="text-center">¿QUIÉNES SOMOS?</h2>
+    <article class="container d-none d-sm-block">
+        <h3 id="quienes-somos" class="text-center">¿QUIÉNES SOMOS?</h3>
         <hr class="mx-4">
         <div class="row">
             <section class="col">
@@ -124,63 +124,67 @@
     </article>
 
     <!-- Destacados-->
-    <h2 class="text-center">DESTACADOS</h2>
-    <hr class="mx-4">    
-    <article class="container">        
+    <h3 id="destacados" class="text-center">DESTACADOS</h3>
+    <hr class="mx-4">
+    <article class="container">
         <div class="row">
             <div class="col">
                 <div class="card">
                     <img src="./assets/img/card1.jpg" class="card-img-top" alt="Lago">
                     <div class="card-body bg-azul">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="col">
                 <div class="card">
                     <img src="./assets/img/card2.jpg" class="card-img-top" alt="Montañas">
                     <div class="card-body bg-azul">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="col">
                 <div class="card">
                     <img src="./assets/img/card3.jpg" class="card-img-top" alt="Paisaje">
                     <div class="card-body bg-azul">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="col">
                 <div class="card">
                     <img src="./assets/img/card4.jpg" class="card-img-top" alt="Selva">
                     <div class="card-body bg-azul">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </article>
 
     <!-- Contacto -->
-    <h2 class="text-center">CONTACTO</h2>
-    <hr class="mx-4">      
+    <h3 id="contacto" class="text-center">CONTACTO</h3>
+    <hr class="mx-4">
     <section>
-        
+
     </section>
 
     <!-- Footer con iconos-->
     <footer class="container-fluid bg-azul">
         <div class="row text-center bg-azul">
             <div class="col-6">
-                <h2>VIAJES CHILE</h2>
+                <h3>VIAJES CHILE</h3>
             </div>
             <div class="col-6">
-                <i class="fa-brands fa-github-square fs-2 mx-2"></i>
-                <i class="fa-brands fa-linkedin fs-2 mx-2"></i>
-                <i class="fa-brands fa-twitter-square fs-2 mx-2"></i>
-                <i class="fa-brands fa-facebook-square fs-2 mx-2"></i>
+                <a href="https://github.com"><i class="fa-brands fa-github-square fs-2 mx-2"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fs-2 mx-2"></i></a>
+                <a href="http://www.twitter.com"><i class="fa-brands fa-twitter-square fs-2 mx-2"></i></a>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-square fs-2 mx-2"></i></a>   
             </div>
         </div>
     </footer>
@@ -188,7 +192,7 @@
     <!-- Bootstrap 5 js CDN-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
