@@ -1,3 +1,4 @@
+
 html, body {
     /*scroll-behavior: smooth;*/
     font-family: 'Raleway', sans-serif;
@@ -5,14 +6,17 @@ html, body {
     color: white;
 }
 
+/* Fondo de color celeste */
 .bg-azul {
     background-color: deepskyblue;
 }
 
+/* Linea horizontal blanca */
 hr {
     background-color: white;
 }
 
+/* Quitar las decoraciones a los enlaces y poner color negro al hacer hover */
 a {
     text-decoration: none;
     color: white;
@@ -20,4 +24,33 @@ a {
 
 a:hover {
     color: black;
+}
+
+/* Agregar !important para asegurar de sobrescribir los estilos de bootstrap */
+
+/* Tooltip modificado color blanco con letras negras */
+.tooltip-inner {
+    background-color: white !important;
+    color: black !important;
+}
+
+.tooltip.bs-tooltip-right .tooltip-arrow::before {
+    border-right-color: white !important;
+}
+
+.tooltip.bs-tooltip-left .tooltip-arrow::before {
+    border-left-color: white !important;
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: white !important;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: white !important;
+}
+
+/* Popover cambio de color*/
+.popover-header {
+    color: black; 
 }

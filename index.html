@@ -47,6 +47,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
+                    <!-- Enlaces que utilizan smooth scroll de jquery para navegar a diferentes partes de la pagina-->
                     <li class="nav-item">
                         <a class="nav-link" href="#inicio">Inicio</a>
                     </li>
@@ -65,7 +66,7 @@
     </nav>
 
     <!-- Carousel-->
-    <header id="inicio"class="container-fluid px-0">
+    <header id="inicio" class="container-fluid px-0">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <!-- Ocultar indicadores inferiores ------
         <div class="carousel-indicators">
@@ -98,12 +99,14 @@
     </header>
 
     <!-- Quienes Somos -->
+    <!-- Se oculta la seccion QUIENES SOMOS en dispositivos pequeños -->
     <article class="container d-none d-sm-block">
         <h3 id="quienes-somos" class="text-center">¿QUIÉNES SOMOS?</h3>
         <hr class="mx-4">
         <div class="row">
             <section class="col">
-                <i class="container-fluid fa-solid fa-plane bg-azul text-center"></i>
+                <i class="container-fluid fa-solid fa-plane bg-azul text-center" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="Viaje por avión."></i>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo cumque ex obcaecati optio ratione
                     quibusdam dolorem voluptas repudiandae itaque aliquam dolorum illum nulla reiciendis harum atque,
                     incidunt quos distinctio.</p>
@@ -112,10 +115,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo cumque ex obcaecati optio ratione
                     quibusdam dolorem voluptas repudiandae itaque aliquam dolorum illum nulla reiciendis harum atque,
                     incidunt quos distinctio.</p>
-                <i class="container-fluid fa-solid fa-mountain bg-azul text-center"></i>
+                <i class="container-fluid fa-solid fa-mountain bg-azul text-center" data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="Paisajes y naturaleza."></i>
             </section>
             <section class="col">
-                <i class="container-fluid fa-solid fa-route bg-azul text-center"></i>
+                <i class="container-fluid fa-solid fa-route bg-azul text-center" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="Rutas de lugares populares."></i>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illo cumque ex obcaecati optio ratione
                     quibusdam dolorem voluptas repudiandae itaque aliquam dolorum illum nulla reiciendis harum atque,
                     incidunt quos distinctio.</p>
@@ -130,7 +135,18 @@
         <div class="row">
             <div class="col">
                 <div class="card">
-                    <img src="./assets/img/card1.jpg" class="card-img-top" alt="Lago">
+                    <img src="./assets/img/card1.jpg" class="card-img-top" alt="Lago" data-bs-toggle="popover"
+                        data-bs-placement="bottom" title="Paisaje 1" data-bs-content="Lugar muy hermoso">
+                    <div class="card-body bg-azul ">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/img/card2.jpg" class="card-img-top" alt="Montañas" data-bs-toggle="popover"
+                        data-bs-placement="bottom" title="Paisaje 2" data-bs-content="Lugar muy hermoso">
                     <div class="card-body bg-azul">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
@@ -139,7 +155,8 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="./assets/img/card2.jpg" class="card-img-top" alt="Montañas">
+                    <img src="./assets/img/card3.jpg" class="card-img-top" alt="Paisaje" data-bs-toggle="popover"
+                        data-bs-placement="bottom" title="Paisaje 3" data-bs-content="Lugar muy hermoso">
                     <div class="card-body bg-azul">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
@@ -148,16 +165,8 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="./assets/img/card3.jpg" class="card-img-top" alt="Paisaje">
-                    <div class="card-body bg-azul">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./assets/img/card4.jpg" class="card-img-top" alt="Selva">
+                    <img src="./assets/img/card4.jpg" class="card-img-top" alt="Selva" data-bs-toggle="popover"
+                        data-bs-placement="bottom" title="Paisaje 4" data-bs-content="Lugar muy hermoso">
                     <div class="card-body bg-azul">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
@@ -170,6 +179,7 @@
     <!-- Contacto -->
     <h3 id="contacto" class="text-center">CONTACTO</h3>
     <hr class="mx-4">
+    <!-- Textform-->
     <section>
 
     </section>
@@ -180,11 +190,12 @@
             <div class="col-6">
                 <h3>VIAJES CHILE</h3>
             </div>
+            <!-- Icono de redes sociales -->
             <div class="col-6">
                 <a href="https://github.com"><i class="fa-brands fa-github-square fs-2 mx-2"></i></a>
                 <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fs-2 mx-2"></i></a>
                 <a href="http://www.twitter.com"><i class="fa-brands fa-twitter-square fs-2 mx-2"></i></a>
-                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-square fs-2 mx-2"></i></a>   
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-square fs-2 mx-2"></i></a>
             </div>
         </div>
     </footer>
