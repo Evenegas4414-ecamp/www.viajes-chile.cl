@@ -1,17 +1,13 @@
 body {
     font-family: 'Raleway', sans-serif;
     background-color: black;
+    color: white;
 }
 
 .bg-azul {
     background-color: deepskyblue;
 }
 
-.card-body {
-    background-color: deepskyblue;
-}
-
-i {
-    background-color: deepskyblue;
-    color: white;
+hr {
+    background-color: white;
 }
