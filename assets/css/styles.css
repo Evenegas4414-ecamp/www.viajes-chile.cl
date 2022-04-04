@@ -16,6 +16,13 @@ hr {
     background-color: white;
 }
 
+/* Imagenes de cards con las misma altura */
+.card-img-top {
+    width: 100%;
+    height: 13vw;
+    object-fit: cover;
+}
+
 /* Quitar las decoraciones a los enlaces y poner color negro al hacer hover */
 a {
     text-decoration: none;
