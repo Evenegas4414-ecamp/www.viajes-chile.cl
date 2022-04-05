@@ -1,5 +1,6 @@
 Proyecto: Viajes Chile
 
-Web realizada el curso de Fullstack Java 0002.
+Web realizada para el curso de Fullstack Java 0002.
 
-# www.viajes-chile.cl
+Github Pages:
+# https://evenegas4414-ecamp.github.io/www.viajes-chile.cl/
